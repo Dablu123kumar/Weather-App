@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weither app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h2>Weither App</h2>
+    </header>
+    <main>
+        <div class="error404">
+            <h1>Sorry! Location not found!!!!</h1>
+            <img src="./assets/404.png" alt="" class="img404">
+           <button class="reStart">ReStart</button>
+        </div>
+      <div class="mainContainer">
+        <div class="searchContainer">
+          <input type="text" placeholder="Enter city name" />
+          <button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <h3 class="name"> <span class="country"></span></h3>
+        <div class="image">
+          <img src="./assets/clear.png" alt="" />
+        </div>
+        <div class="tempContainer">
+          <h3>Temp:<span class="temp"></span ></h3>
+          <p class="description">Clear</p>
+          <h5>Feels-like: <span class="feels"></span></h5>
+        </div>
+        <div class="weitherDetails">
+            <div class="">
+
+                <p>Humidity:  <span class="humidity"></span></p>
+              </div>
+              <div class="wind">
+                <p> <i class="fa-solid fa-wind"></i>&nbsp; <span class="windS"></span></p>
+                <p>Wind speed</p>
+              </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
